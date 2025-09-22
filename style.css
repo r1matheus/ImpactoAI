@@ -111,6 +111,8 @@ body {
     padding: 15px;
     border-top: 1px solid var(--border-color);
     background: var(--chat-bg);
+    align-items: center;
+    gap: 10px;
 }
 
 #user-input {
@@ -128,18 +130,22 @@ body {
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
 }
 
+.chat-input button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #send-button {
     background: var(--primary-blue);
     color: white;
-    border: none;
     border-radius: 50%;
     width: 45px;
     height: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin-left: 10px;
     transition: background 0.3s ease, transform 0.2s ease;
 }
 
@@ -154,16 +160,63 @@ body {
 #send-button svg {
     width: 20px;
     height: 20px;
+    stroke: white;
 }
 
+#upload-button svg {
+    width: 22px;
+    height: 22px;
+    stroke: #555;
+}
+
+#upload-button:hover svg {
+    stroke: var(--primary-blue);
+}
+
+/* Tablets */
 @media (max-width: 768px) {
     .chat-container {
         height: 90vh;
         max-width: 95%;
-        margin-top: 80px;
+        margin-top: 0;
     }
 
     .header-container {
-        padding: 15px 20px;
+        display: none; /* esconde header (Impacto AI + logo) */
+    }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+    .chat-container {
+        height: 100vh;
+        max-width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .chat-header {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .chat-input {
+        padding: 10px;
+        gap: 6px;
+    }
+
+    #send-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    #send-button svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    #upload-button svg {
+        width: 20px;
+        height: 20px;
     }
 }

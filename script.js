@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const sendButton = document.getElementById('send-button');
 
     // ** SUBSTITUA PELA URL DO SEU WEBHOOK DO N8N **
-    const webhookURL = 'https://n8nbot.ngrok.app/webhook/b9e6006f-2251-43cd-86e4-96c8cda45c2b/chat';
+    const webhookURL = 'https://n8nbot.ngrok.app/webhook/d27f2cbe-1564-41ac-a17f-9095309a31d1/chat';
 
     // Gera um ID de sessão único para a memória do chat no n8n
     const sessionId = 'session_' + Math.random().toString(36).substring(2, 9);
@@ -74,14 +74,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Mensagem inicial do bot para começar a conversa
-    addMessage("Olá! Eu sou assistente pessoal da Giovana Cezari. Como posso te ajudar hoje?", false);
+    addMessage("Olá! Eu sou Impacto AI, como posso te ajudar hoje?", false);
 });document.addEventListener('DOMContentLoaded', () => {
     const chatBox = document.getElementById('chat-box');
     const userInput = document.getElementById('user-input');
     const sendButton = document.getElementById('send-button');
 
     // ** SUBSTITUA PELA URL DO SEU WEBHOOK DO N8N **
-    const webhookURL = 'https://n8nbot.ngrok.app/webhook/b9e6006f-2251-43cd-86e4-96c8cda45c2b/chat';
+    const webhookURL = 'https://n8nbot.ngrok.app/webhook/d27f2cbe-1564-41ac-a17f-9095309a31d1/chat';
 
     // Gera um ID de sessão único para a memória do chat no n8n
     const sessionId = 'session_' + Math.random().toString(36).substring(2, 9);

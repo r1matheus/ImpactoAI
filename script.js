@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const userInput = document.getElementById('user-input');
     const sendButton = document.getElementById('send-button');
 
-    // ✅ Webhook do Impacto AI
-    const webhookURL = 'https://n8nbot.ngrok.app/webhook/d27f2cbe-1564-41ac-a17f-9095309a31d1/chat';
+    // ✅ Webhook do Impacto AI (URL CORRETA)
+    const webhookURL = 'https://n8nbot.ngrok.app/webhook/6d9fabcd-3748-458f-a5ab-eca6f2d03170/chat';
 
     // Gera um ID de sessão único para a memória do chat no n8n
     const sessionId = 'impacto_' + Math.random().toString(36).substring(2, 9);
@@ -66,5 +66,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Mensagem inicial do bot
-    addMessage("Olá! Eu sou Impacto AI, como posso te ajudar hoje?", false);
+    addMessage("Olá! Eu sou Impacto AI, e vou te ajudar com a Reforma Tributária", false);
 });
